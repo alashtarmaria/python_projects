@@ -24,7 +24,7 @@ def main():
           mark_task_completed()
   
       elif choice == "3":
-          view_tasks()
+          view_tasks(tasks)
 
       elif choice == "4":
           break
@@ -65,11 +65,11 @@ def mark_task_completed():
     # print message
     print("Task marked completed")
 
-def view_tasks():
+def view_tasks(task_list):
     # if there are no tasks , print a message and return 
-    if not tasks : print("No task to view ") ; return
+    if not task_list : print("No task to view ") ; return
     
-    for index ,task in enumerate(tasks):
+    for index ,task in enumerate(task_list):
         status = "✔" if task["completed"] else "❌"    
 
         print(f'{index + 1 }.{task["task"]} {status} ')
