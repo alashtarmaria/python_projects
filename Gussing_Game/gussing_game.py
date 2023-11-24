@@ -8,12 +8,12 @@ out_of_guesses = False
 while guess != secret_word and not out_of_guesses:
 
     if guess_count < guess_limit :
-       guess = input("Enter guess : ")
+       guess = input("Enter your guess : ")
        guess_count+=1
     else :
         out_of_guesses =True
 
 if out_of_guesses :
-    print("You lose out of guesses : (")    
+    print("You lose out of guesses 😐😑")    
 else :
-    print("You win :))) ")      
+    print("Congrats ! You win  🎉🎉🎉")      
